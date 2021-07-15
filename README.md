@@ -21,3 +21,6 @@ setting up the font and text size
 aligning all the buttons in correct order.
 
 There's our calculator ready to use.
+
+Crystal Shrestha - 30 B 
+210245
