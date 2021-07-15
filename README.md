@@ -8,7 +8,7 @@ defining a click and giving "=" an evaluation command.
 
 making a window of (300x700)
 giving the project a title ("Calculator - Crystal")
-adding an icon with iconbitmap
+adding an icon with iconbitmap - icon (https://icon-icons.com/icon/calculator/2972)
 background color
 
 Using a string variable
