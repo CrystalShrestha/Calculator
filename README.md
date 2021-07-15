@@ -1,6 +1,7 @@
 # Calculator
 
-Description : This Project is a basic Calculator which works and performs simple calculations.
+Description
+  This Project is a basic Calculator which works and performs simple calculations.
 This project is done with tkinter. 
 
 Importing tkinter at start.
