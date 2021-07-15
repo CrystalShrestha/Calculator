@@ -21,100 +21,102 @@ def click(event):
 
 root = Tk()
 root.geometry("300x700")
-root.title("Calculator - Crystal")
-root.wm_iconbitmap("D:\College\Calculator\calculator_3534.ico")
-root.configure(bg='khaki3')
-
+root.title("Calculator")
+root.iconbitmap("D:\College\Calculator\calculator_3534.ico")
+root.configure(bg='grey26')
+root.resizable(0,0)
+root.attributes('-toolwindow', True)
 
 scvalue = StringVar()
 scvalue.set("")
 screen = Entry(root, textvar=scvalue, font="lucida 40 bold")
 screen.pack(fill=X, ipadx=8, pady=18, padx=10)
 
-f = Frame(root, bg="khaki1")
-b = Button(f, text="C", font="lucida 30 bold", padx=7, pady=8)
+f = Frame(root, bg="grey26")
+b = Button(f, text="C", font="lucida 30 bold", padx=7, pady=8, fg= "brown4", bg="slateblue4", borderwidth = 4)
 b.pack(side=LEFT, padx=8, pady=4)
 b.bind("<Button-1>", click)
 
-b = Button(f, text="/", font="lucida 30 bold", padx=17, pady=8)
+b = Button(f, text="/", font="lucida 30 bold", padx=17, pady=8, bg="slateblue4", borderwidth = 4)
 b.pack(side=LEFT, padx=10, pady=2)
 b.bind("<Button-1>", click)
 
-b = Button(f, text="%", font="lucida 30 bold", padx=7, pady=8)
+b = Button(f, text="%", font="lucida 30 bold", padx=7, pady=8, bg="slateblue4", borderwidth = 4)
 b.pack(side=LEFT, padx=10, pady=2)
 b.bind("<Button-1>", click)
 
 f.pack()
 
-f = Frame(root, bg="khaki1")
-b = Button(f, text="7", font="lucida 30 bold", padx=12, pady=8)
+f = Frame(root, bg="grey26")
+b = Button(f, text="7", font="lucida 30 bold", padx=12, pady=8, bg="slateblue4", borderwidth = 4)
 b.pack(side=LEFT, padx=9, pady=2)
 b.bind("<Button-1>", click)
 
-b = Button(f, text="8", font="lucida 30 bold", padx=12, pady=8)
+b = Button(f, text="8", font="lucida 30 bold", padx=12, pady=8, bg="slateblue4", borderwidth = 4)
 b.pack(side=LEFT, padx=9, pady=2)
 b.bind("<Button-1>", click)
 
-b = Button(f, text="9", font="lucida 30 bold", padx=12, pady=8)
-b.pack(side=LEFT, padx=9, pady=2)
-b.bind("<Button-1>", click)
-
-f.pack()
-
-
-f = Frame(root, bg="khaki1")
-b = Button(f, text="4", font="lucida 30 bold", padx=12, pady=8)
-b.pack(side=LEFT, padx=9, pady=2)
-b.bind("<Button-1>", click)
-
-b = Button(f, text="5", font="lucida 30 bold", padx=12, pady=8)
-b.pack(side=LEFT, padx=9, pady=2)
-b.bind("<Button-1>", click)
-
-b = Button(f, text="6", font="lucida 30 bold", padx=12, pady=8)
+b = Button(f, text="9", font="lucida 30 bold", padx=12, pady=8, bg="slateblue4", borderwidth = 4)
 b.pack(side=LEFT, padx=9, pady=2)
 b.bind("<Button-1>", click)
 
 f.pack()
 
 
-f = Frame(root, bg="khaki1")
-b = Button(f, text="1", font="lucida 30 bold", padx=12, pady=8)
+f = Frame(root, bg="grey26")
+b = Button(f, text="4", font="lucida 30 bold", padx=12, pady=8, bg="slateblue4", borderwidth = 4)
 b.pack(side=LEFT, padx=9, pady=2)
 b.bind("<Button-1>", click)
 
-b = Button(f, text="2", font="lucida 30 bold", padx=12, pady=8)
+b = Button(f, text="5", font="lucida 30 bold", padx=12, pady=8, bg="slateblue4", borderwidth = 4)
 b.pack(side=LEFT, padx=9, pady=2)
 b.bind("<Button-1>", click)
 
-b = Button(f, text="3", font="lucida 30 bold", padx=12, pady=8)
+b = Button(f, text="6", font="lucida 30 bold", padx=12, pady=8, bg="slateblue4", borderwidth = 4)
 b.pack(side=LEFT, padx=9, pady=2)
 b.bind("<Button-1>", click)
 
 f.pack()
 
 
-f = Frame(root, bg="khaki1")
-b = Button(f, text="0", font="lucida 30 bold", padx=60, pady=8)
+f = Frame(root, bg="grey26")
+b = Button(f, text="1", font="lucida 30 bold", padx=12, pady=8, bg="slateblue4", borderwidth = 4)
+b.pack(side=LEFT, padx=9, pady=2)
+b.bind("<Button-1>", click)
+
+b = Button(f, text="2", font="lucida 30 bold", padx=12, pady=8, bg="slateblue4", borderwidth = 4)
+b.pack(side=LEFT, padx=9, pady=2)
+b.bind("<Button-1>", click)
+
+b = Button(f, text="3", font="lucida 30 bold", padx=12, pady=8, bg="slateblue4", borderwidth = 4)
+b.pack(side=LEFT, padx=9, pady=2)
+b.bind("<Button-1>", click)
+
+f.pack()
+
+
+f = Frame(root, bg="grey26")
+b = Button(f, text="*", font="lucida 30 bold", padx=13, pady=8, bg="slateblue4", borderwidth = 4)
 b.pack(side=LEFT, padx=10, pady=2)
 b.bind("<Button-1>", click)
 
-b = Button(f, text="+", font="lucida 30 bold", padx=10, pady=8)
+b = Button(f, text="-", font="lucida 30 bold", padx=14, pady=8, bg="slateblue4", borderwidth = 4)
+b.pack(side=LEFT, padx=10, pady=2)
+b.bind("<Button-1>", click)
+
+b = Button(f, text="+", font="lucida 30 bold", padx=10, pady=8, bg="slateblue4", borderwidth = 4)
 b.pack(side=LEFT, padx=10, pady=2)
 b.bind("<Button-1>", click)
 
 f.pack()
 
-f = Frame(root, bg="khaki1")
-b = Button(f, text="*", font="lucida 30 bold", padx=13, pady=8)
+f = Frame(root, bg="grey26")
+b = Button(f, text="0", font="lucida 30 bold", padx=60, pady=8, bg="slateblue4", borderwidth = 4)
 b.pack(side=LEFT, padx=10, pady=2)
 b.bind("<Button-1>", click)
 
-b = Button(f, text="-", font="lucida 30 bold", padx=14, pady=8)
-b.pack(side=LEFT, padx=10, pady=2)
-b.bind("<Button-1>", click)
 
-b = Button(f, text="=", font="lucida 30 bold", padx=13, pady=8)
+b = Button(f, text="=", font="lucida 30 bold", padx=13, pady=8, bg="slateblue4", borderwidth = 4, width = 40)
 b.pack(side=LEFT, padx=10, pady=2)
 b.bind("<Button-1>", click)
 
